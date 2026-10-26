@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись в ногтевой салон</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Запись в ногтевой салон</h1>
+    <p class="subtitle">Оставьте заявку, и мы свяжемся с вами</p>
+
+    [SUCCESS]
+
+    <form method="POST" action="/book">
+        <label>Ваше имя</label>
+        <input type="text" name="name" placeholder="Софья" required>
+        <label>Телефон</label>
+        <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required>
+        <label>Услуга</label>
+        <select name="service" required>
+            <option value="">Выберите услугу</option>
+            <option>Маникюр классический</option>
+            <option>Маникюр с покрытием гель-лак</option>
+            <option>Педикюр</option>
+            <option>Наращивание ногтей</option>
+            <option>Дизайн / роспись</option>
+            <option>Снятие покрытия</option>
+        </select>
+        <div class="row">
+            <div>
+                <label>Дата</label>
+                <input type="date" name="date" required>
+            </div>
+            <div>
+                <label>Время</label>
+                <input type="time" name="time" required>
+            </div>
+        </div>
+        <button type="submit">Записаться</button>
+    </form>
+
+    <h2>Текущие записи ([COUNT])</h2>
+    [TABLE]
+</div>
+</body>
+</html>
