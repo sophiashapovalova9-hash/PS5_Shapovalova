@@ -1,0 +1,7 @@
+{
+  "masters": [
+    {"id": 1, "name": "Анна", "rating": 4.9},
+    {"id": 2, "name": "Игорь", "rating": 4.7},
+    {"id": 3, "name": "Мария", "rating": 5.0}
+  ]
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись на пирсинг</title>
+    <style>
+        body { font-family: Arial; background: #2E1A47; color: white; padding: 20px; }
+        
+        .box { 
+            background: white; 
+            color: black; 
+            padding: 25px; 
+            border-radius: 8px; 
+            max-width: 500px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        h2 { margin-top: 0; }
+
+        input, select, button { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 5px 0 20px 0; 
+            box-sizing: border-box; 
+            font-size: 16px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+        }
+
+        select { min-height: 40px; }
+
+        button { 
+            background: #7B2CBF; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            font-weight: bold; 
+            transition: 0.2s;
+        }
+        button:hover { background: #5a1b8f; }
+        
+        #msg { color: red; font-weight: bold; }
+        
+        #list { padding: 0; }
+        #list li { 
+            background: #f0e6ff; 
+            color: black; 
+            padding: 12px; 
+            margin-bottom: 8px; 
+            list-style: none; 
+            font-size: 15px;
+            border-left: 4px solid #7B2CBF;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Студия пирсинга</h1>
+
+    <div class="box">
+        <h2>Запись</h2>
+        <label>Имя:</label>
+        <input type="text" id="name" placeholder="Введите ваше имя">
+
+        <label>Телефон:</label>
+        <input type="text" id="phone" placeholder="+7 999 123-45-67">
+
+        <label>Услуга:</label>
+        <select id="service">
+            <option value=""> Выберите услугу </option>
+        </select>
+
+        <label>Мастер:</label>
+        <select id="master">
+            <option value=""> Выберите мастера </option>
+        </select>
+
+        <button id="send">Отправить заявку</button>
+        <p id="msg"></p>
+    </div>
+
+    <div class="box">
+        <h2>История заявок</h2>
+        <ul id="list"></ul>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
